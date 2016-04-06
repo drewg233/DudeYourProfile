@@ -1,0 +1,365 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		B936B8091CB46D4900DE9368 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = B936B8081CB46D4900DE9368 /* AppDelegate.swift */; };
+		B936B80B1CB46D4900DE9368 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B936B80A1CB46D4900DE9368 /* ViewController.swift */; };
+		B936B80E1CB46D4900DE9368 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = B936B80C1CB46D4900DE9368 /* Main.storyboard */; };
+		B936B8101CB46D4900DE9368 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = B936B80F1CB46D4900DE9368 /* Assets.xcassets */; };
+		B936B8131CB46D4900DE9368 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = B936B8111CB46D4900DE9368 /* LaunchScreen.storyboard */; };
+		B936B81C1CB4705E00DE9368 /* Montserrat-Bold.otf in Resources */ = {isa = PBXBuildFile; fileRef = B936B81B1CB4705E00DE9368 /* Montserrat-Bold.otf */; };
+		B936B81E1CB4707100DE9368 /* Montserrat-UltraLight.otf in Resources */ = {isa = PBXBuildFile; fileRef = B936B81D1CB4707100DE9368 /* Montserrat-UltraLight.otf */; };
+		B936B8201CB4707A00DE9368 /* Montserrat-Hairline.otf in Resources */ = {isa = PBXBuildFile; fileRef = B936B81F1CB4707A00DE9368 /* Montserrat-Hairline.otf */; };
+		B936B8221CB4721C00DE9368 /* ChooseFacebookPrankee.swift in Sources */ = {isa = PBXBuildFile; fileRef = B936B8211CB4721C00DE9368 /* ChooseFacebookPrankee.swift */; };
+		B936B8251CB473CF00DE9368 /* Friend.swift in Sources */ = {isa = PBXBuildFile; fileRef = B936B8241CB473CF00DE9368 /* Friend.swift */; };
+		B936B8271CB4748200DE9368 /* DataService.swift in Sources */ = {isa = PBXBuildFile; fileRef = B936B8261CB4748200DE9368 /* DataService.swift */; };
+		B936B8291CB4761500DE9368 /* FriendTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = B936B8281CB4761500DE9368 /* FriendTableViewCell.swift */; };
+		B936B82E1CB4771F00DE9368 /* loginScript.js in Resources */ = {isa = PBXBuildFile; fileRef = B936B82B1CB4771F00DE9368 /* loginScript.js */; };
+		B936B82F1CB4771F00DE9368 /* getFriendsScript.js in Resources */ = {isa = PBXBuildFile; fileRef = B936B82C1CB4771F00DE9368 /* getFriendsScript.js */; };
+		B936B8301CB4771F00DE9368 /* addComment.js in Resources */ = {isa = PBXBuildFile; fileRef = B936B82D1CB4771F00DE9368 /* addComment.js */; };
+		B936B8321CB47A0100DE9368 /* ChooseFacebookCommentFrom.swift in Sources */ = {isa = PBXBuildFile; fileRef = B936B8311CB47A0100DE9368 /* ChooseFacebookCommentFrom.swift */; };
+		B936B8341CB47D3400DE9368 /* PreviewFacebook.swift in Sources */ = {isa = PBXBuildFile; fileRef = B936B8331CB47D3400DE9368 /* PreviewFacebook.swift */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXFileReference section */
+		B936B8051CB46D4900DE9368 /* DudeYourProfile.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = DudeYourProfile.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		B936B8081CB46D4900DE9368 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		B936B80A1CB46D4900DE9368 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		B936B80D1CB46D4900DE9368 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		B936B80F1CB46D4900DE9368 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		B936B8121CB46D4900DE9368 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		B936B8141CB46D4900DE9368 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		B936B81B1CB4705E00DE9368 /* Montserrat-Bold.otf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Montserrat-Bold.otf"; sourceTree = "<group>"; };
+		B936B81D1CB4707100DE9368 /* Montserrat-UltraLight.otf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Montserrat-UltraLight.otf"; sourceTree = "<group>"; };
+		B936B81F1CB4707A00DE9368 /* Montserrat-Hairline.otf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Montserrat-Hairline.otf"; sourceTree = "<group>"; };
+		B936B8211CB4721C00DE9368 /* ChooseFacebookPrankee.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ChooseFacebookPrankee.swift; sourceTree = "<group>"; };
+		B936B8241CB473CF00DE9368 /* Friend.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Friend.swift; sourceTree = "<group>"; };
+		B936B8261CB4748200DE9368 /* DataService.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DataService.swift; sourceTree = "<group>"; };
+		B936B8281CB4761500DE9368 /* FriendTableViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FriendTableViewCell.swift; sourceTree = "<group>"; };
+		B936B82B1CB4771F00DE9368 /* loginScript.js */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.javascript; path = loginScript.js; sourceTree = "<group>"; };
+		B936B82C1CB4771F00DE9368 /* getFriendsScript.js */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.javascript; path = getFriendsScript.js; sourceTree = "<group>"; };
+		B936B82D1CB4771F00DE9368 /* addComment.js */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.javascript; path = addComment.js; sourceTree = "<group>"; };
+		B936B8311CB47A0100DE9368 /* ChooseFacebookCommentFrom.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ChooseFacebookCommentFrom.swift; sourceTree = "<group>"; };
+		B936B8331CB47D3400DE9368 /* PreviewFacebook.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PreviewFacebook.swift; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		B936B8021CB46D4900DE9368 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		B936B7FC1CB46D4900DE9368 = {
+			isa = PBXGroup;
+			children = (
+				B936B8071CB46D4900DE9368 /* DudeYourProfile */,
+				B936B8061CB46D4900DE9368 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		B936B8061CB46D4900DE9368 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				B936B8051CB46D4900DE9368 /* DudeYourProfile.app */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		B936B8071CB46D4900DE9368 /* DudeYourProfile */ = {
+			isa = PBXGroup;
+			children = (
+				B936B8231CB473C500DE9368 /* Model */,
+				B936B8081CB46D4900DE9368 /* AppDelegate.swift */,
+				B936B80A1CB46D4900DE9368 /* ViewController.swift */,
+				B936B8211CB4721C00DE9368 /* ChooseFacebookPrankee.swift */,
+				B936B8311CB47A0100DE9368 /* ChooseFacebookCommentFrom.swift */,
+				B936B8331CB47D3400DE9368 /* PreviewFacebook.swift */,
+				B936B80C1CB46D4900DE9368 /* Main.storyboard */,
+				B936B80F1CB46D4900DE9368 /* Assets.xcassets */,
+				B936B8111CB46D4900DE9368 /* LaunchScreen.storyboard */,
+				B936B8141CB46D4900DE9368 /* Info.plist */,
+				B936B82A1CB4770A00DE9368 /* Javascript Files */,
+				B936B81A1CB4702600DE9368 /* Fonts */,
+				B936B8281CB4761500DE9368 /* FriendTableViewCell.swift */,
+			);
+			path = DudeYourProfile;
+			sourceTree = "<group>";
+		};
+		B936B81A1CB4702600DE9368 /* Fonts */ = {
+			isa = PBXGroup;
+			children = (
+				B936B81B1CB4705E00DE9368 /* Montserrat-Bold.otf */,
+				B936B81D1CB4707100DE9368 /* Montserrat-UltraLight.otf */,
+				B936B81F1CB4707A00DE9368 /* Montserrat-Hairline.otf */,
+			);
+			name = Fonts;
+			sourceTree = "<group>";
+		};
+		B936B8231CB473C500DE9368 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				B936B8261CB4748200DE9368 /* DataService.swift */,
+				B936B8241CB473CF00DE9368 /* Friend.swift */,
+			);
+			name = Model;
+			sourceTree = "<group>";
+		};
+		B936B82A1CB4770A00DE9368 /* Javascript Files */ = {
+			isa = PBXGroup;
+			children = (
+				B936B82B1CB4771F00DE9368 /* loginScript.js */,
+				B936B82C1CB4771F00DE9368 /* getFriendsScript.js */,
+				B936B82D1CB4771F00DE9368 /* addComment.js */,
+			);
+			name = "Javascript Files";
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		B936B8041CB46D4900DE9368 /* DudeYourProfile */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = B936B8171CB46D4900DE9368 /* Build configuration list for PBXNativeTarget "DudeYourProfile" */;
+			buildPhases = (
+				B936B8011CB46D4900DE9368 /* Sources */,
+				B936B8021CB46D4900DE9368 /* Frameworks */,
+				B936B8031CB46D4900DE9368 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = DudeYourProfile;
+			productName = DudeYourProfile;
+			productReference = B936B8051CB46D4900DE9368 /* DudeYourProfile.app */;
+			productType = "com.apple.product-type.application";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		B936B7FD1CB46D4900DE9368 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastSwiftUpdateCheck = 0730;
+				LastUpgradeCheck = 0730;
+				ORGANIZATIONNAME = "Andrew Garcia";
+				TargetAttributes = {
+					B936B8041CB46D4900DE9368 = {
+						CreatedOnToolsVersion = 7.3;
+					};
+				};
+			};
+			buildConfigurationList = B936B8001CB46D4900DE9368 /* Build configuration list for PBXProject "DudeYourProfile" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = B936B7FC1CB46D4900DE9368;
+			productRefGroup = B936B8061CB46D4900DE9368 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				B936B8041CB46D4900DE9368 /* DudeYourProfile */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		B936B8031CB46D4900DE9368 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				B936B8301CB4771F00DE9368 /* addComment.js in Resources */,
+				B936B8201CB4707A00DE9368 /* Montserrat-Hairline.otf in Resources */,
+				B936B8131CB46D4900DE9368 /* LaunchScreen.storyboard in Resources */,
+				B936B82E1CB4771F00DE9368 /* loginScript.js in Resources */,
+				B936B8101CB46D4900DE9368 /* Assets.xcassets in Resources */,
+				B936B80E1CB46D4900DE9368 /* Main.storyboard in Resources */,
+				B936B81C1CB4705E00DE9368 /* Montserrat-Bold.otf in Resources */,
+				B936B82F1CB4771F00DE9368 /* getFriendsScript.js in Resources */,
+				B936B81E1CB4707100DE9368 /* Montserrat-UltraLight.otf in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		B936B8011CB46D4900DE9368 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				B936B80B1CB46D4900DE9368 /* ViewController.swift in Sources */,
+				B936B8091CB46D4900DE9368 /* AppDelegate.swift in Sources */,
+				B936B8221CB4721C00DE9368 /* ChooseFacebookPrankee.swift in Sources */,
+				B936B8291CB4761500DE9368 /* FriendTableViewCell.swift in Sources */,
+				B936B8341CB47D3400DE9368 /* PreviewFacebook.swift in Sources */,
+				B936B8251CB473CF00DE9368 /* Friend.swift in Sources */,
+				B936B8271CB4748200DE9368 /* DataService.swift in Sources */,
+				B936B8321CB47A0100DE9368 /* ChooseFacebookCommentFrom.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXVariantGroup section */
+		B936B80C1CB46D4900DE9368 /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				B936B80D1CB46D4900DE9368 /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		B936B8111CB46D4900DE9368 /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				B936B8121CB46D4900DE9368 /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		B936B8151CB46D4900DE9368 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.3;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		B936B8161CB46D4900DE9368 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.3;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				SDKROOT = iphoneos;
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		B936B8181CB46D4900DE9368 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				INFOPLIST_FILE = DudeYourProfile/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.andrewjohngarcia.DudeYourProfile;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Debug;
+		};
+		B936B8191CB46D4900DE9368 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				INFOPLIST_FILE = DudeYourProfile/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.andrewjohngarcia.DudeYourProfile;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		B936B8001CB46D4900DE9368 /* Build configuration list for PBXProject "DudeYourProfile" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				B936B8151CB46D4900DE9368 /* Debug */,
+				B936B8161CB46D4900DE9368 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		B936B8171CB46D4900DE9368 /* Build configuration list for PBXNativeTarget "DudeYourProfile" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				B936B8181CB46D4900DE9368 /* Debug */,
+				B936B8191CB46D4900DE9368 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = B936B7FD1CB46D4900DE9368 /* Project object */;
+}
