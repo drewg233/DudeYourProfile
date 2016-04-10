@@ -7,11 +7,15 @@
 //
 
 import UIKit
+import Spring
 
-class ChooseFacebookCommentFrom: UIViewController, UITableViewDelegate, UITableViewDataSource, UITextFieldDelegate {
+class ChooseFacebookCommentFrom: UIViewController, UITableViewDelegate, UITableViewDataSource, UITextFieldDelegate, UISearchBarDelegate, UISearchDisplayDelegate {
     
     
     @IBOutlet weak var commentTable: UITableView!
+    @IBOutlet weak var topBgView: SpringView!
+    @IBOutlet weak var searchBar: UISearchBar!
+    
     
     var inSearchMode = false
     var filteredFriends = [Friend]()
@@ -28,11 +32,16 @@ class ChooseFacebookCommentFrom: UIViewController, UITableViewDelegate, UITableV
     func setUpView() {
         commentTable.dataSource = self
         commentTable.delegate = self
+        searchBar.delegate = self
         
         friends = DataService.shared.friendsList
         commentTable.reloadData()
+        
     }
     
+    override func preferredStatusBarStyle() -> UIStatusBarStyle {
+        return UIStatusBarStyle.LightContent
+    }
     
     // Table View
     func numberOfSectionsInTableView(tableView: UITableView) -> Int {
@@ -75,5 +84,50 @@ class ChooseFacebookCommentFrom: UIViewController, UITableViewDelegate, UITableV
         DataService.shared.setCommentFrom(commentFrom)
         self.performSegueWithIdentifier("goToPreviewSegue", sender: self)
     }
+    
+    
+    
+    // Search
+    func filterContentForSearch(searchText: String, scope: String = "Friend") {
+        self.filteredFriends = self.friends.filter({ (friend: Friend) -> Bool in
+            let categoryMatch = (scope == "Friend")
+            let stringMatch = friend.friendName.rangeOfString(searchText)
+            
+            return categoryMatch && (stringMatch != nil)
+        })
+    }
+    
+    func searchDisplayController(controller: UISearchDisplayController, shouldReloadTableForSearchString searchString: String?) -> Bool {
+        self.filterContentForSearch(searchString!, scope: "Friend")
+        if searchString?.characters.count > 0 {
+            inSearchMode = true
+        } else {
+            inSearchMode = false
+        }
+        return true
+    }
+    
+    func searchDisplayController(controller: UISearchDisplayController, shouldReloadTableForSearchScope searchOption: Int) -> Bool {
+        self.filterContentForSearch((self.searchDisplayController?.searchBar.text)!, scope: "Friend")
+        
+        return true
+    }
+    
+    func searchDisplayController(controller: UISearchDisplayController, didHideSearchResultsTableView tableView: UITableView) {
+        inSearchMode = false
+    }
+    
+    func searchDisplayController(controller: UISearchDisplayController, willShowSearchResultsTableView tableView: UITableView) {
+        tableView.rowHeight = 66.00
+        tableView.backgroundColor = UIColor(red:0.13, green:0.15, blue:0.19, alpha:1.0)
+        tableView.separatorStyle = .None
+    }
+    
+    
+    
+    @IBAction func backButtonCommentFromPressed(sender: AnyObject) {
+        self.dismissViewControllerAnimated(true, completion: {});
+    }
+    
     
 }

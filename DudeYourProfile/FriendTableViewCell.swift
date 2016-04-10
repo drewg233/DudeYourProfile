@@ -17,7 +17,7 @@ class FriendTableViewCell: UITableViewCell {
       let url = NSURL(string: friend.profileImg)
       if let data = NSData(contentsOfURL: url!) {
             self.profileImage.image = UIImage(data: data)
-            self.profileImage.layer.cornerRadius = 10
+            self.profileImage.layer.cornerRadius = profileImage.frame.height/2
             self.profileImage.layer.masksToBounds = true
       }
       friendName.text = friend.friendName

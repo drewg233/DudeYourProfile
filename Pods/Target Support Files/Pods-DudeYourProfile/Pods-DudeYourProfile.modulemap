@@ -1,0 +1,6 @@
+framework module Pods_DudeYourProfile {
+  umbrella header "Pods-DudeYourProfile-umbrella.h"
+
+  export *
+  module * { export * }
+}

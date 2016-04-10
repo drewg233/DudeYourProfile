@@ -7,17 +7,21 @@
 //
 
 import UIKit
+import Spring
 import WebKit
 
-class ChooseFacebookPrankee: UIViewController, WKNavigationDelegate, WKScriptMessageHandler, UITableViewDataSource, UITableViewDelegate, UITextFieldDelegate, UISearchBarDelegate {
+class ChooseFacebookPrankee: UIViewController, WKNavigationDelegate, WKScriptMessageHandler, UITableViewDataSource, UITableViewDelegate, UITextFieldDelegate, UISearchBarDelegate, UISearchDisplayDelegate {
     
     @IBOutlet weak var friendsList: UITableView!
+    @IBOutlet weak var topBgView: SpringView!
+    @IBOutlet weak var searchBar: UISearchBar!
     
     
     var webView: WKWebView
     let config = WKWebViewConfiguration()
     let loginScriptURL = NSBundle.mainBundle().pathForResource("loginScript", ofType: "js")
     let getFriendsURL = NSBundle.mainBundle().pathForResource("getFriendsScript", ofType: "js")
+    
 
     let loginMessageHandler = "facebookLogin"
     let getFriendsMessageHandler = "getFriends"
@@ -48,10 +52,15 @@ class ChooseFacebookPrankee: UIViewController, WKNavigationDelegate, WKScriptMes
         setUpView()
     }
     
+    override func preferredStatusBarStyle() -> UIStatusBarStyle {
+        return UIStatusBarStyle.LightContent
+    }
+    
     func setUpView() {
         friendsList.delegate = self
         friendsList.dataSource = self
-//        searchBar.delegate = self
+        
+        searchBar.delegate = self
 //        
 //        searchBarView.hidden = true
         
@@ -62,6 +71,7 @@ class ChooseFacebookPrankee: UIViewController, WKNavigationDelegate, WKScriptMes
         view.addConstraints([height, width])
         
         webView.loadRequest(NSURLRequest(URL:NSURL(string:"https://m.facebook.com/friends/center/friends")!))
+        
     }
     
     func setUpSelectFriendsView() {
@@ -90,11 +100,6 @@ class ChooseFacebookPrankee: UIViewController, WKNavigationDelegate, WKScriptMes
             }
         }
     }
-    
-    
-    
-    
-    
     
     
     // Table View
@@ -135,12 +140,51 @@ class ChooseFacebookPrankee: UIViewController, WKNavigationDelegate, WKScriptMes
         }
         victim = friendCell as Friend!
         DataService.shared.setVictim(victim!)
-        print("It got here with friend: \(victim!)")
         performSegueWithIdentifier("commentFromSegue", sender: nil)
+    }
+    
+    
+    
+    // Search
+    func filterContentForSearch(searchText: String, scope: String = "Friend") {
+        self.filteredFriends = self.friends.filter({ (friend: Friend) -> Bool in
+            let categoryMatch = (scope == "Friend")
+            let stringMatch = friend.friendName.rangeOfString(searchText)
+            
+           return categoryMatch && (stringMatch != nil)
+        })
+    }
+    
+    func searchDisplayController(controller: UISearchDisplayController, shouldReloadTableForSearchString searchString: String?) -> Bool {
+        self.filterContentForSearch(searchString!, scope: "Friend")
+        if searchString?.characters.count > 0 {
+            inSearchMode = true
+        } else {
+            inSearchMode = false
+        }
+        return true
+    }
+    
+    func searchDisplayController(controller: UISearchDisplayController, shouldReloadTableForSearchScope searchOption: Int) -> Bool {
+        self.filterContentForSearch((self.searchDisplayController?.searchBar.text)!, scope: "Friend")
+        return true
+    }
+    
+    func searchDisplayController(controller: UISearchDisplayController, didHideSearchResultsTableView tableView: UITableView) {
+        inSearchMode = false
+    }
+    
+    func searchDisplayController(controller: UISearchDisplayController, willShowSearchResultsTableView tableView: UITableView) {
+        tableView.rowHeight = 66.00
+        tableView.backgroundColor = UIColor(red:0.13, green:0.15, blue:0.19, alpha:1.0)
+        tableView.separatorStyle = .None
     }
 
     
     
+    @IBAction func backButtonPressedChoosePrankee(sender: AnyObject) {
+        self.dismissViewControllerAnimated(true, completion: {});
+    }
     
     
 }

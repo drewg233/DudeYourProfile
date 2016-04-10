@@ -36,5 +36,12 @@
 		<string>UIInterfaceOrientationLandscapeLeft</string>
 		<string>UIInterfaceOrientationLandscapeRight</string>
 	</array>
+	<key>UIAppFonts</key>
+	<array>
+		<string>Kreon-Light.ttf</string>
+		<string>Kreon-Regular.ttf</string>
+		<string>Kreon-Bold.ttf</string>
+		<string>Montserrat-Regular.otf</string>
+	</array>
 </dict>
 </plist>

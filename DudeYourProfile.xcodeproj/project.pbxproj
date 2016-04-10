@@ -7,6 +7,8 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		8A49E7672FA5CF7CEAC769C2 /* Pods_DudeYourProfile.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = DCE956FF18091DC488DC9827 /* Pods_DudeYourProfile.framework */; };
+		B90DEE301CBAE18000746063 /* iAd.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B90DEE2F1CBAE18000746063 /* iAd.framework */; };
 		B936B8091CB46D4900DE9368 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = B936B8081CB46D4900DE9368 /* AppDelegate.swift */; };
 		B936B80B1CB46D4900DE9368 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B936B80A1CB46D4900DE9368 /* ViewController.swift */; };
 		B936B80E1CB46D4900DE9368 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = B936B80C1CB46D4900DE9368 /* Main.storyboard */; };
@@ -24,9 +26,15 @@
 		B936B8301CB4771F00DE9368 /* addComment.js in Resources */ = {isa = PBXBuildFile; fileRef = B936B82D1CB4771F00DE9368 /* addComment.js */; };
 		B936B8321CB47A0100DE9368 /* ChooseFacebookCommentFrom.swift in Sources */ = {isa = PBXBuildFile; fileRef = B936B8311CB47A0100DE9368 /* ChooseFacebookCommentFrom.swift */; };
 		B936B8341CB47D3400DE9368 /* PreviewFacebook.swift in Sources */ = {isa = PBXBuildFile; fileRef = B936B8331CB47D3400DE9368 /* PreviewFacebook.swift */; };
+		B936B8371CB5FD2900DE9368 /* Kreon-Light.ttf in Resources */ = {isa = PBXBuildFile; fileRef = B936B8351CB5FD2900DE9368 /* Kreon-Light.ttf */; };
+		B936B8381CB5FD2900DE9368 /* Kreon-Regular.ttf in Resources */ = {isa = PBXBuildFile; fileRef = B936B8361CB5FD2900DE9368 /* Kreon-Regular.ttf */; };
+		B936B83A1CB5FD7800DE9368 /* Kreon-Bold.ttf in Resources */ = {isa = PBXBuildFile; fileRef = B936B8391CB5FD7800DE9368 /* Kreon-Bold.ttf */; };
+		B9A910591CBAA12600676679 /* Montserrat-Regular.otf in Resources */ = {isa = PBXBuildFile; fileRef = B9A910581CBAA12600676679 /* Montserrat-Regular.otf */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		355E1ECEE65AA609CF5C41B5 /* Pods-DudeYourProfile.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-DudeYourProfile.debug.xcconfig"; path = "Pods/Target Support Files/Pods-DudeYourProfile/Pods-DudeYourProfile.debug.xcconfig"; sourceTree = "<group>"; };
+		B90DEE2F1CBAE18000746063 /* iAd.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = iAd.framework; path = System/Library/Frameworks/iAd.framework; sourceTree = SDKROOT; };
 		B936B8051CB46D4900DE9368 /* DudeYourProfile.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = DudeYourProfile.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		B936B8081CB46D4900DE9368 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		B936B80A1CB46D4900DE9368 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -46,6 +54,12 @@
 		B936B82D1CB4771F00DE9368 /* addComment.js */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.javascript; path = addComment.js; sourceTree = "<group>"; };
 		B936B8311CB47A0100DE9368 /* ChooseFacebookCommentFrom.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ChooseFacebookCommentFrom.swift; sourceTree = "<group>"; };
 		B936B8331CB47D3400DE9368 /* PreviewFacebook.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PreviewFacebook.swift; sourceTree = "<group>"; };
+		B936B8351CB5FD2900DE9368 /* Kreon-Light.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Kreon-Light.ttf"; sourceTree = "<group>"; };
+		B936B8361CB5FD2900DE9368 /* Kreon-Regular.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Kreon-Regular.ttf"; sourceTree = "<group>"; };
+		B936B8391CB5FD7800DE9368 /* Kreon-Bold.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Kreon-Bold.ttf"; sourceTree = "<group>"; };
+		B9A910581CBAA12600676679 /* Montserrat-Regular.otf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Montserrat-Regular.otf"; sourceTree = "<group>"; };
+		BFA7C5F078429318F99777DB /* Pods-DudeYourProfile.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-DudeYourProfile.release.xcconfig"; path = "Pods/Target Support Files/Pods-DudeYourProfile/Pods-DudeYourProfile.release.xcconfig"; sourceTree = "<group>"; };
+		DCE956FF18091DC488DC9827 /* Pods_DudeYourProfile.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_DudeYourProfile.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -53,6 +67,8 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				B90DEE301CBAE18000746063 /* iAd.framework in Frameworks */,
+				8A49E7672FA5CF7CEAC769C2 /* Pods_DudeYourProfile.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -64,6 +80,8 @@
 			children = (
 				B936B8071CB46D4900DE9368 /* DudeYourProfile */,
 				B936B8061CB46D4900DE9368 /* Products */,
+				DA3DE1569C27A01E5E4381B8 /* Pods */,
+				D845EEECB1C84FD7C5BA6F77 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -98,9 +116,13 @@
 		B936B81A1CB4702600DE9368 /* Fonts */ = {
 			isa = PBXGroup;
 			children = (
+				B9A910581CBAA12600676679 /* Montserrat-Regular.otf */,
 				B936B81B1CB4705E00DE9368 /* Montserrat-Bold.otf */,
 				B936B81D1CB4707100DE9368 /* Montserrat-UltraLight.otf */,
 				B936B81F1CB4707A00DE9368 /* Montserrat-Hairline.otf */,
+				B936B8351CB5FD2900DE9368 /* Kreon-Light.ttf */,
+				B936B8361CB5FD2900DE9368 /* Kreon-Regular.ttf */,
+				B936B8391CB5FD7800DE9368 /* Kreon-Bold.ttf */,
 			);
 			name = Fonts;
 			sourceTree = "<group>";
@@ -124,6 +146,24 @@
 			name = "Javascript Files";
 			sourceTree = "<group>";
 		};
+		D845EEECB1C84FD7C5BA6F77 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				B90DEE2F1CBAE18000746063 /* iAd.framework */,
+				DCE956FF18091DC488DC9827 /* Pods_DudeYourProfile.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		DA3DE1569C27A01E5E4381B8 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				355E1ECEE65AA609CF5C41B5 /* Pods-DudeYourProfile.debug.xcconfig */,
+				BFA7C5F078429318F99777DB /* Pods-DudeYourProfile.release.xcconfig */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -131,9 +171,12 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = B936B8171CB46D4900DE9368 /* Build configuration list for PBXNativeTarget "DudeYourProfile" */;
 			buildPhases = (
+				040E12373D5985C0FA7812EC /* Check Pods Manifest.lock */,
 				B936B8011CB46D4900DE9368 /* Sources */,
 				B936B8021CB46D4900DE9368 /* Frameworks */,
 				B936B8031CB46D4900DE9368 /* Resources */,
+				7019444E499C53045BF327F1 /* Embed Pods Frameworks */,
+				CABEA01CB81143AD35AF862A /* Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -183,9 +226,13 @@
 			buildActionMask = 2147483647;
 			files = (
 				B936B8301CB4771F00DE9368 /* addComment.js in Resources */,
+				B936B8371CB5FD2900DE9368 /* Kreon-Light.ttf in Resources */,
 				B936B8201CB4707A00DE9368 /* Montserrat-Hairline.otf in Resources */,
+				B936B83A1CB5FD7800DE9368 /* Kreon-Bold.ttf in Resources */,
 				B936B8131CB46D4900DE9368 /* LaunchScreen.storyboard in Resources */,
+				B9A910591CBAA12600676679 /* Montserrat-Regular.otf in Resources */,
 				B936B82E1CB4771F00DE9368 /* loginScript.js in Resources */,
+				B936B8381CB5FD2900DE9368 /* Kreon-Regular.ttf in Resources */,
 				B936B8101CB46D4900DE9368 /* Assets.xcassets in Resources */,
 				B936B80E1CB46D4900DE9368 /* Main.storyboard in Resources */,
 				B936B81C1CB4705E00DE9368 /* Montserrat-Bold.otf in Resources */,
@@ -195,6 +242,54 @@
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		040E12373D5985C0FA7812EC /* Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "Check Pods Manifest.lock";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_ROOT}/../Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [[ $? != 0 ]] ; then\n    cat << EOM\nerror: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\nEOM\n    exit 1\nfi\n";
+			showEnvVarsInLog = 0;
+		};
+		7019444E499C53045BF327F1 /* Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "Embed Pods Frameworks";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-DudeYourProfile/Pods-DudeYourProfile-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		CABEA01CB81143AD35AF862A /* Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-DudeYourProfile/Pods-DudeYourProfile-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
 		B936B8011CB46D4900DE9368 /* Sources */ = {
@@ -319,6 +414,7 @@
 		};
 		B936B8181CB46D4900DE9368 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 355E1ECEE65AA609CF5C41B5 /* Pods-DudeYourProfile.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				INFOPLIST_FILE = DudeYourProfile/Info.plist;
@@ -330,6 +426,7 @@
 		};
 		B936B8191CB46D4900DE9368 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = BFA7C5F078429318F99777DB /* Pods-DudeYourProfile.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				INFOPLIST_FILE = DudeYourProfile/Info.plist;
@@ -358,6 +455,7 @@
 				B936B8191CB46D4900DE9368 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
