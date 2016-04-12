@@ -39,6 +39,8 @@ class PreviewFacebook: UIViewController, WKNavigationDelegate, WKScriptMessageHa
     override func viewDidLoad() {
         super.viewDidLoad()
         
+        // self.interstitialPresentationPolicy = ADInterstitialPresentationPolicy.Automatic
+        // self.requestInterstitialAdPresentation()
         setUpView()
     }
     
@@ -59,24 +61,34 @@ class PreviewFacebook: UIViewController, WKNavigationDelegate, WKScriptMessageHa
         
         self.doneButton.layer.cornerRadius = 5
         
-//        self.view.bringSubviewToFront(commentTextView)
-//        self.view.bringSubviewToFront(bottomPanel)
-//        self.view.bringSubviewToFront(topStatusBarView)
-//        self.view.bringSubviewToFront(takeScreenShotView)
         
-        self.interstitialPresentationPolicy = ADInterstitialPresentationPolicy.Automatic
-        self.requestInterstitialAdPresentation()
+        
+        self.view.bringSubviewToFront(commentTextView)
+        self.view.bringSubviewToFront(bottomPanel)
+        self.view.bringSubviewToFront(topStatusBarView)
+        self.view.bringSubviewToFront(takeScreenShotView)
+        
+        self.interstitialPresentationPolicy = ADInterstitialPresentationPolicy.Manual
+//        self.requestInterstitialAdPresentation()
         
         commentTextView.hidden = true
         takeScreenShotView.hidden = true
     }
     
-    
-    
-    
-    func userContentController(userContentController: WKUserContentController, didReceiveScriptMessage message: WKScriptMessage) {
+    override func viewDidAppear(animated: Bool) {
+        super.viewDidAppear(animated)
         
+        dispatch_after(
+            dispatch_time(
+                DISPATCH_TIME_NOW,
+                Int64(1 * Double(NSEC_PER_SEC))
+            ),
+            dispatch_get_main_queue(), {
+                self.requestInterstitialAdPresentation()
+        })
     }
+    
+    func userContentController(userContentController: WKUserContentController, didReceiveScriptMessage message: WKScriptMessage) {}
     
     func openCommentView() {
         if (self.commentTextView.hidden == true) {
@@ -103,16 +115,28 @@ class PreviewFacebook: UIViewController, WKNavigationDelegate, WKScriptMessageHa
     
     
     @IBAction func commentDoneButtonPressed(sender: AnyObject) {
-        DataService.shared.setTheComment(commentTextBox.text!)
+        let theTextComment: String = commentTextBox.text!
         
-        let timeAgo = "5 minutes ago"
+        if theTextComment.length > 0 {
+            
+            var newComment = theTextComment.stringByReplacingOccurrencesOfString("\"", withString: "")
+            newComment = newComment.stringByReplacingOccurrencesOfString("\'", withString: "")
+            
+            DataService.shared.setTheComment(newComment)
+            
+            let timeAgo = "5 minutes ago"
+            
+            webView.evaluateJavaScript("storeAndShow( '\(DataService.shared.theComment)', '\(DataService.shared.commentFrom.profileImg)', '\(DataService.shared.commentFrom.friendName)', '\(timeAgo)' )",
+                                       completionHandler: nil)
+            print("'\(DataService.shared.theComment)', '\(DataService.shared.commentFrom.profileImg)', '\(DataService.shared.commentFrom.friendName)'")
+            commentAdded = true
+            showScreenShotButton()
+            openCommentView()
+            
+            
+        }
         
-        webView.evaluateJavaScript("storeAndShow( '\(DataService.shared.theComment)', '\(DataService.shared.commentFrom.profileImg)', '\(DataService.shared.commentFrom.friendName)', '\(timeAgo)' )",
-                                   completionHandler: nil)
-        print("'\(DataService.shared.theComment)', '\(DataService.shared.commentFrom.profileImg)', '\(DataService.shared.commentFrom.friendName)'")
-        commentAdded = true
-        showScreenShotButton()
-        openCommentView()
+
     }
     
     func showScreenShotButton() {

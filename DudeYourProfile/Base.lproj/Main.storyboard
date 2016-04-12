@@ -62,21 +62,29 @@
                                 <color key="textColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="calibratedRGB"/>
                                 <nil key="highlightedColor"/>
                             </label>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Create a fake comment on your friends profile and send it to them!" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="2" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Gyh-bs-sxw">
-                                <rect key="frame" x="127" y="309" width="347" height="69"/>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Create a fake comment on your friends profile and send it to them!" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="2" baselineAdjustment="alignBaselines" minimumFontSize="12" translatesAutoresizingMaskIntoConstraints="NO" id="Gyh-bs-sxw">
+                                <rect key="frame" x="20" y="309" width="560" height="69"/>
                                 <constraints>
-                                    <constraint firstAttribute="width" constant="347" id="JmZ-gO-Z4a"/>
-                                    <constraint firstAttribute="height" constant="69" id="qYr-o7-bcc"/>
+                                    <constraint firstAttribute="width" constant="560" id="JmZ-gO-Z4a">
+                                        <variation key="heightClass=compact-widthClass=compact" constant="360"/>
+                                    </constraint>
+                                    <constraint firstAttribute="height" constant="69" id="qYr-o7-bcc">
+                                        <variation key="heightClass=compact-widthClass=compact" constant="49"/>
+                                    </constraint>
                                 </constraints>
                                 <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                 <color key="textColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="calibratedRGB"/>
                                 <nil key="highlightedColor"/>
                             </label>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="DISCLAIMER: This does not actually post to FaceBook nor is affiliated with FaceBook in any way." textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="3" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="8be-zx-hhS">
-                                <rect key="frame" x="125" y="518" width="349" height="62"/>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="DISCLAIMER: This does not actually post to FaceBook nor is affiliated with FaceBook in any way." textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="3" baselineAdjustment="alignBaselines" minimumFontSize="11" translatesAutoresizingMaskIntoConstraints="NO" id="8be-zx-hhS">
+                                <rect key="frame" x="20" y="518" width="560" height="62"/>
                                 <constraints>
-                                    <constraint firstAttribute="height" constant="62" id="0tT-KL-2yV"/>
-                                    <constraint firstAttribute="width" constant="349" id="WvX-Nv-LGH"/>
+                                    <constraint firstAttribute="height" constant="62" id="0tT-KL-2yV">
+                                        <variation key="heightClass=compact-widthClass=compact" constant="45"/>
+                                    </constraint>
+                                    <constraint firstAttribute="width" constant="560" id="WvX-Nv-LGH">
+                                        <variation key="heightClass=compact-widthClass=compact" constant="360"/>
+                                    </constraint>
                                 </constraints>
                                 <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                 <color key="textColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="calibratedRGB"/>
@@ -85,16 +93,30 @@
                         </subviews>
                         <color key="backgroundColor" red="0.12941176470588234" green="0.14509803921568626" blue="0.19215686274509802" alpha="1" colorSpace="calibratedRGB"/>
                         <constraints>
-                            <constraint firstItem="jlr-BB-Yy1" firstAttribute="top" secondItem="yhn-TV-N0k" secondAttribute="bottom" constant="23" id="8va-BL-gQJ"/>
+                            <constraint firstItem="jlr-BB-Yy1" firstAttribute="top" secondItem="yhn-TV-N0k" secondAttribute="bottom" constant="23" id="8va-BL-gQJ">
+                                <variation key="heightClass=compact-widthClass=compact" constant="8"/>
+                            </constraint>
+                            <constraint firstItem="Gyh-bs-sxw" firstAttribute="trailing" secondItem="8bC-Xf-vdC" secondAttribute="trailingMargin" id="CQ2-vT-ew0"/>
                             <constraint firstItem="jlr-BB-Yy1" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="IDe-mE-dyZ"/>
-                            <constraint firstItem="Gyh-bs-sxw" firstAttribute="top" secondItem="jlr-BB-Yy1" secondAttribute="bottom" constant="8" id="Plq-UK-Tnz"/>
+                            <constraint firstItem="8be-zx-hhS" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leadingMargin" id="KGE-cZ-JeA"/>
+                            <constraint firstItem="Gyh-bs-sxw" firstAttribute="top" secondItem="jlr-BB-Yy1" secondAttribute="bottom" constant="8" id="Plq-UK-Tnz">
+                                <variation key="heightClass=compact-widthClass=compact" constant="8"/>
+                            </constraint>
                             <constraint firstItem="8be-zx-hhS" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="Qxw-k8-8BA"/>
                             <constraint firstItem="LMx-Sh-ZJz" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="ZQ9-rv-fSZ"/>
-                            <constraint firstItem="LMx-Sh-ZJz" firstAttribute="top" secondItem="Gyh-bs-sxw" secondAttribute="bottom" constant="32" id="aGZ-8h-1od"/>
+                            <constraint firstItem="LMx-Sh-ZJz" firstAttribute="top" secondItem="Gyh-bs-sxw" secondAttribute="bottom" constant="32" id="aGZ-8h-1od">
+                                <variation key="heightClass=compact-widthClass=compact" constant="8"/>
+                            </constraint>
+                            <constraint firstItem="Gyh-bs-sxw" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leadingMargin" id="c2r-6b-BR5"/>
                             <constraint firstItem="yhn-TV-N0k" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="ltl-o1-ZSt"/>
+                            <constraint firstItem="8be-zx-hhS" firstAttribute="trailing" secondItem="8bC-Xf-vdC" secondAttribute="trailingMargin" id="nBZ-Jg-MrV"/>
                             <constraint firstItem="Gyh-bs-sxw" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="vyw-c5-iHK"/>
-                            <constraint firstItem="yhn-TV-N0k" firstAttribute="top" secondItem="y3c-jy-aDJ" secondAttribute="bottom" constant="79" id="wlI-rJ-4lY"/>
-                            <constraint firstItem="wfy-db-euE" firstAttribute="top" secondItem="8be-zx-hhS" secondAttribute="bottom" constant="20" id="zbl-kK-ZG2"/>
+                            <constraint firstItem="yhn-TV-N0k" firstAttribute="top" secondItem="y3c-jy-aDJ" secondAttribute="bottom" constant="79" id="wlI-rJ-4lY">
+                                <variation key="heightClass=compact-widthClass=compact" constant="0.0"/>
+                            </constraint>
+                            <constraint firstItem="wfy-db-euE" firstAttribute="top" secondItem="8be-zx-hhS" secondAttribute="bottom" constant="20" id="zbl-kK-ZG2">
+                                <variation key="heightClass=compact-widthClass=compact" constant="8"/>
+                            </constraint>
                         </constraints>
                     </view>
                     <connections>
@@ -104,7 +126,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="305" y="429"/>
+            <point key="canvasLocation" x="304.5" y="429"/>
         </scene>
         <!--Choose Facebook Prankee-->
         <scene sceneID="V5e-gq-KeO">
@@ -193,7 +215,7 @@
                                 </prototypes>
                             </tableView>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" text="This is the profile you will post the fake comment to." textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="2" baselineAdjustment="alignBaselines" minimumFontSize="10" translatesAutoresizingMaskIntoConstraints="NO" id="pEh-O5-YhO">
-                                <rect key="frame" x="20" y="112" width="560" height="47"/>
+                                <rect key="frame" x="20" y="124" width="560" height="35"/>
                                 <fontDescription key="fontDescription" name="Montserrat-UltraLight" family="Montserrat" pointSize="15"/>
                                 <color key="textColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                 <nil key="highlightedColor"/>
@@ -215,7 +237,7 @@
                             <constraint firstItem="pEh-O5-YhO" firstAttribute="trailing" secondItem="X9J-4t-bA9" secondAttribute="trailingMargin" id="8vQ-3A-4v5"/>
                             <constraint firstAttribute="trailingMargin" secondItem="MdW-z5-2d5" secondAttribute="trailing" constant="-20" id="95y-uZ-tok"/>
                             <constraint firstItem="nkg-g3-hZy" firstAttribute="top" secondItem="pEh-O5-YhO" secondAttribute="bottom" constant="8" id="Dxh-Di-i9z"/>
-                            <constraint firstItem="pEh-O5-YhO" firstAttribute="top" secondItem="wNX-rG-pGi" secondAttribute="bottom" constant="2" id="JpU-W6-zeD"/>
+                            <constraint firstItem="pEh-O5-YhO" firstAttribute="top" secondItem="wNX-rG-pGi" secondAttribute="bottom" constant="14" id="JpU-W6-zeD"/>
                             <constraint firstItem="wNX-rG-pGi" firstAttribute="leading" secondItem="X9J-4t-bA9" secondAttribute="leading" id="L6p-g7-kpF"/>
                             <constraint firstItem="nkg-g3-hZy" firstAttribute="leading" secondItem="X9J-4t-bA9" secondAttribute="leading" id="OI8-bh-eaX"/>
                             <constraint firstItem="wNX-rG-pGi" firstAttribute="top" secondItem="MdW-z5-2d5" secondAttribute="bottom" id="Rbn-3g-bQf"/>
@@ -263,7 +285,7 @@
                                 <rect key="frame" x="0.0" y="0.0" width="600" height="64"/>
                                 <subviews>
                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="CHOOSE FROM COMMENT" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" minimumFontSize="15" translatesAutoresizingMaskIntoConstraints="NO" id="obH-yk-uzX">
-                                        <rect key="frame" x="8" y="25" width="584" height="38"/>
+                                        <rect key="frame" x="8" y="20" width="584" height="38"/>
                                         <constraints>
                                             <constraint firstAttribute="height" constant="38" id="D0U-f0-VOU"/>
                                         </constraints>
@@ -284,7 +306,7 @@
                                     <constraint firstAttribute="height" constant="132" id="1Ey-mK-6AY"/>
                                     <constraint firstAttribute="height" constant="64" id="7Us-fZ-erF"/>
                                     <constraint firstAttribute="trailing" secondItem="obH-yk-uzX" secondAttribute="trailing" constant="8" id="UON-Qg-TUu"/>
-                                    <constraint firstItem="obH-yk-uzX" firstAttribute="top" secondItem="BlR-k3-XaN" secondAttribute="top" constant="25" id="fka-FY-SoN"/>
+                                    <constraint firstItem="obH-yk-uzX" firstAttribute="top" secondItem="BlR-k3-XaN" secondAttribute="top" constant="20" id="fka-FY-SoN"/>
                                     <constraint firstItem="obH-yk-uzX" firstAttribute="leading" secondItem="BlR-k3-XaN" secondAttribute="leading" constant="8" id="i7L-SI-PDL"/>
                                 </constraints>
                                 <variation key="default">

@@ -8,7 +8,7 @@
 
 /* Begin PBXBuildFile section */
 		8A49E7672FA5CF7CEAC769C2 /* Pods_DudeYourProfile.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = DCE956FF18091DC488DC9827 /* Pods_DudeYourProfile.framework */; };
-		B90DEE301CBAE18000746063 /* iAd.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B90DEE2F1CBAE18000746063 /* iAd.framework */; };
+		B90DEE331CBAFF8F00746063 /* iAd.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B90DEE2F1CBAE18000746063 /* iAd.framework */; };
 		B936B8091CB46D4900DE9368 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = B936B8081CB46D4900DE9368 /* AppDelegate.swift */; };
 		B936B80B1CB46D4900DE9368 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B936B80A1CB46D4900DE9368 /* ViewController.swift */; };
 		B936B80E1CB46D4900DE9368 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = B936B80C1CB46D4900DE9368 /* Main.storyboard */; };
@@ -67,7 +67,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				B90DEE301CBAE18000746063 /* iAd.framework in Frameworks */,
+				B90DEE331CBAFF8F00746063 /* iAd.framework in Frameworks */,
 				8A49E7672FA5CF7CEAC769C2 /* Pods_DudeYourProfile.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -177,6 +177,7 @@
 				B936B8031CB46D4900DE9368 /* Resources */,
 				7019444E499C53045BF327F1 /* Embed Pods Frameworks */,
 				CABEA01CB81143AD35AF862A /* Copy Pods Resources */,
+				B90DEE341CBB0B5900746063 /* ShellScript */,
 			);
 			buildRules = (
 			);
@@ -199,6 +200,7 @@
 				TargetAttributes = {
 					B936B8041CB46D4900DE9368 = {
 						CreatedOnToolsVersion = 7.3;
+						DevelopmentTeam = GG9V45QPUJ;
 					};
 				};
 			};
@@ -273,6 +275,19 @@
 			shellPath = /bin/sh;
 			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-DudeYourProfile/Pods-DudeYourProfile-frameworks.sh\"\n";
 			showEnvVarsInLog = 0;
+		};
+		B90DEE341CBB0B5900746063 /* ShellScript */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Fabric/run\" 0d2cf57792991e45cdf66208a073b02d3e30f719 2c92b1307c35e957eadb80d88c2234f01d335d8dfefc787b5f7bd92d463b80bb";
 		};
 		CABEA01CB81143AD35AF862A /* Copy Pods Resources */ = {
 			isa = PBXShellScriptBuildPhase;
@@ -417,9 +432,15 @@
 			baseConfigurationReference = 355E1ECEE65AA609CF5C41B5 /* Pods-DudeYourProfile.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)",
+				);
 				INFOPLIST_FILE = DudeYourProfile/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.1;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
-				PRODUCT_BUNDLE_IDENTIFIER = com.andrewjohngarcia.DudeYourProfile;
+				PRODUCT_BUNDLE_IDENTIFIER = com.andrewgarcia.dudeyourprofile;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 			};
 			name = Debug;
@@ -429,9 +450,15 @@
 			baseConfigurationReference = BFA7C5F078429318F99777DB /* Pods-DudeYourProfile.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)",
+				);
 				INFOPLIST_FILE = DudeYourProfile/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.1;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
-				PRODUCT_BUNDLE_IDENTIFIER = com.andrewjohngarcia.DudeYourProfile;
+				PRODUCT_BUNDLE_IDENTIFIER = com.andrewgarcia.dudeyourprofile;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 			};
 			name = Release;

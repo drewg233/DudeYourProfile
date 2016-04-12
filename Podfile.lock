@@ -1,7 +1,12 @@
 PODS:
+  - Answers (1.2.0):
+    - Fabric (~> 1.6.3)
+  - Fabric (1.6.7)
   - Spring (1.0.3)
 
 DEPENDENCIES:
+  - Answers
+  - Fabric
   - Spring (from `https://github.com/MengTo/Spring.git`, branch `swift2`)
 
 EXTERNAL SOURCES:
@@ -15,6 +20,8 @@ CHECKOUT OPTIONS:
     :git: https://github.com/MengTo/Spring.git
 
 SPEC CHECKSUMS:
+  Answers: f47bc44937ab00fe5a119b16df28e1d1aeadcf84
+  Fabric: caf7580c725e64db144f610ac65cd60956911dc7
   Spring: 3f02b5dc3308572ef177b3cad0fa7bbc4b0706f7
 
 COCOAPODS: 0.39.0

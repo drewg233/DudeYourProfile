@@ -5,5 +5,7 @@ use_frameworks!
 
 target 'DudeYourProfile' do
   pod 'Spring', :git => 'https://github.com/MengTo/Spring.git', :branch => 'swift2'
+pod 'Fabric'
+pod 'Answers'
 end
 
