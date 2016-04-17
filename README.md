@@ -1,4 +1,4 @@
-## Dude Your Profile
+## Dude Your Profile :speak_no_evil:
 
 I submitted this app to Apple and they did not enjoy it as much as I did. Might as well open source it!
 
